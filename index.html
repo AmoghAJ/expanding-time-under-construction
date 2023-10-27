@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding Time</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comfortaa', cursive, Arial, sans-serif;
+            text-align: center;
+        }
+        #background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('./static/background.png') no-repeat center center fixed;
+            background-size: cover;
+            filter: grayscale(100%); /* Apply grayscale effect */
+        }
+        #content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        #under-construction {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1s 1s forwards; /* Delayed fade-in animation */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        h1 {
+            font-size: 66px;
+            text-shadow: 2px 2px 2px rgba(255, 252, 252, 0.5); /* Dark shade of white (light gray) text border */
+            color: rgb(39, 39, 39);
+        }
+        h3 {
+            font-size: 24px;
+            color: #333;
+        }
+        #social-links {
+            margin-top: 20px;
+        }
+        #social-links a {
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        #social-links img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="background-container"></div>
+    <div id="content">
+        <div id="under-construction">
+            <h1 style="font-family: 'Comfortaa', cursive;">Expanding Time</h1>
+            <h3>Site under construction</h3>
+            <div id="social-links">
+                <a href="https://www.youtube.com/watch?v=sxDSDEA53-I" target="_blank"><img src="./static/youtube.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
